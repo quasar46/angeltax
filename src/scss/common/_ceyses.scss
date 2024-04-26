@@ -1,0 +1,41 @@
+.ceyses {
+    background-image: url("../images/Rectangle 14.png");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.ceyses__wrap {
+    position: relative;
+}
+
+.ceyses__slider {
+    max-width: 862px;
+}
+
+.ceyses__title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.ceyses__item {
+    padding: 50px 70px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    @media (max-width: 767px) {
+        padding: 20px;
+        gap: 15px;
+    }
+}
+
+.ceyses__name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}

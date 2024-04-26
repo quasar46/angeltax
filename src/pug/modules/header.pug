@@ -1,0 +1,17 @@
+header.header
+	.container 
+		.header__wrap 
+			.header__col
+				img.logo.header__logo(src=require('../../images/logo.png'), alt='')
+				h1.header__title Оптимизируем налоги
+			.header__col
+				.header__block
+					button.btn.header__btn Получить предложение оптимизации налогов
+					.header__links 
+						a.header__link(href="") 
+							svg(width="28" height="26")
+								use(xlink:href="#icn-tg")
+						a.header__tel(href="tel:+74999386547") +7 (499) 938-65-47
+				button.burger 
+					img(src=require('../../images/burger-menu-right.svg'), alt='')
+					img(src=require('../../images/close.svg'), alt='')

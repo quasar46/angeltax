@@ -1,0 +1,269 @@
+extends layout
+block main 
+	main
+		section.main-block 
+			.container 
+				.main-block__wrap 
+					.main-block__col 
+						.main-block__titles 
+							span
+								| Оптимизация налогов до 90% <br>
+								i.color-second Легально. Законно. 
+							span 
+								| Сэкономили уже <br>
+								i.color-second > 287 000 000 руб. <br> 
+								|	нашим клиентам!
+						button.btn.btn--second.main-block__btn Подробнее
+					.main-block__col.quiz
+						form.quiz__wrap 
+							h3.quiz__title Ответьте на вопросы и получите <i class="color-second">7% скидку</i> на устную консультацию
+							.quiz__item 
+								.quiz__content
+									h4.quiz__item-name 1. Форма собственности организации:
+									ul.quiz__list 
+										li 
+											input(type="radio" value="ООО" id="r1" name="type1" checked)
+											label(for="r1") ООО
+										li
+											input(type="radio" value="ИП" id="r2" name="type1")
+											label(for="r2") ИП
+										li
+											input(type="radio" value="АО" id="r3" name="type1")
+											label(for="r3") АО
+										li
+											input(type="radio" value="ПАО" id="r4" name="type1")
+											label(for="r4") ПАО
+								.quiz__footer
+									.quiz__count 
+										span.quiz__current 1
+											| /
+											span.quiz__total 4
+									button.btn.btn--first.next Далее
+										svg(width='24' height='13')
+											use(xlink:href='#icn-arrow')
+							.quiz__item 
+								.quiz__content
+									h4.quiz__item-name 2. Форма собственности организации:
+									ul.quiz__list 
+										li 
+											input(type="radio" value="ООО" id="r5" name="type2")
+											label(for="r5") ООО
+										li
+											input(type="radio" value="ИП" id="r6" name="type2")
+											label(for="r6") ИП
+										li
+											input(type="radio" value="АО" id="r7" name="type2")
+											label(for="r7") АО
+										li
+											input(type="radio" value="ПАО" id="r8" name="type2")
+											label(for="r8") ПАО
+								.quiz__footer
+									.quiz__count 
+										span.quiz__current 2
+											| /
+											span.quiz__total 4
+									button.btn.btn--first.next(disabled) Далее
+										svg(width='24' height='13')
+											use(xlink:href='#icn-arrow')
+							.quiz__item 
+								.quiz__content
+									h4.quiz__item-name 3. Форма собственности организации:
+									ul.quiz__list 
+										li 
+											input(type="radio" value="ООО" id="r9" name="type3")
+											label(for="r9") ООО
+										li
+											input(type="radio" value="ИП" id="r10" name="type3")
+											label(for="r10") ИП
+										li
+											input(type="radio" value="АО" id="r11" name="type3")
+											label(for="r11") АО
+										li
+											input(type="radio" value="ПАО" id="r12" name="type3")
+											label(for="r12") ПАО
+								.quiz__footer
+									.quiz__count 
+										span.quiz__current 3
+											| /
+											span.quiz__total 4
+									button.btn.btn--first.next(disabled) Далее
+										svg(width='24' height='13')
+											use(xlink:href='#icn-arrow')
+							.quiz__item 
+								.quiz__content
+									h4.quiz__item-name 4. Форма собственности организации:
+									ul.quiz__list 
+										li 
+											input(type="radio" value="ООО" id="r13" name="type4")
+											label(for="r13") ООО
+										li
+											input(type="radio" value="ИП" id="r14" name="type4")
+											label(for="r14") ИП
+										li
+											input(type="radio" value="АО" id="r15" name="type4")
+											label(for="r15") АО
+										li
+											input(type="radio" value="ПАО" id="r16" name="type4")
+											label(for="r16") ПАО
+								.quiz__footer
+									.quiz__count 
+										span.quiz__current 4
+											| /
+											span.quiz__total 4
+									button(type="submit" disabled).btn.btn--first.next Отправить
+		section.optimization 
+			.container
+				.swiper.optimization__slider 
+					.swiper-wrapper.optimization__wrap
+						.swiper-slide.optimization__item
+							span ООО
+							p Оптимизация ООО
+						.swiper-slide.optimization__item
+							span ИП
+							p Оптимизация ИП
+						.swiper-slide.optimization__item
+							span НДС
+							p Оптимизация НДС
+						.swiper-slide.optimization__item
+							span НПО
+							p Оптимизация налога на прибыль
+						.swiper-slide.optimization__item
+							span НДФЛ
+							p Оптимизация НДФЛ
+						.swiper-slide.optimization__item
+							span УСН
+							p Оптимизация УСН
+		section.wide-block.wide-block--color-grey
+			.container 
+				.wide-block__wrap 
+					h2.wide-block__title Кто мы?
+					.wide-block__label 
+						p Команда профессионал <i class="color-second">AngelTax</i>. Мы используем <b>законные методы</b> оптимизации налогов и экономим Ваши деньги. Наша миссия - каждая компания и каждый предприниматель должны платить "по закону" и не более того!
+
+		section.wide-block.wide-block--color-orange 
+			.container 
+				.wide-block__wrap 
+					h2.wide-block__title Гарантии
+					ul.wide-block__list
+						li
+							img(src=require('../images/gavel-svgrepo-com (1) 1.svg'), alt='')
+							span Гарантии законности
+						li
+							img(src=require('../images/dollar-symbol-svgrepo-com 1.svg'), alt='')
+							span Гарантия экономии определённой суммы
+						li
+							img(src=require('../images/law-scales-svgrepo-com 1.svg'), alt='')
+							span Гарантия полной юридической поддержки
+
+		section.ceyses 
+			.container 
+				.ceyses__wrap
+					h2.title Наши кейсы
+						svg(width='42' height='42')
+							use(xlink:href='#icn-check')
+					.swiper.ceyses__slider
+						.swiper-wrapper 
+							.swiper-slide
+								.ceyses__item
+									span.ceyses__name <span style="color: #D17171;">-</span> Проблема: 
+									.ceyses__text
+										p Технологическая компания на ОСНО, с годовым оборотом 120 миллионов рублей, изначально платила 24 миллиона рублей налога на прибыль (20%) и 5 миллионов налога на имущество. 
+									span.ceyses__name <span style="color: #53B543">+</span> Решение: 
+									.ceyses__text
+										p Применив меры оптимизации, включая участие в госпроекте, освобождающем от налога на прибыль, и пересмотр кадастровой стоимости имущества, компания снизила свои налоговые обязательства.
+										p В результате, компания сократила свои налоговые выплаты с 29 миллионов рублей до 3 миллионов, достигнув экономии в 26 миллионов рублей и снизив налоговую нагрузку примерно на 90%.
+							.swiper-slide
+								.ceyses__item
+									span.ceyses__name <span style="color: #D17171;">-</span> Проблема: 
+									.ceyses__text
+										p ООО на УСН переплачивало налоги из-за неправильного выбора ставок по видам деятельности. 
+									span.ceyses__name <span style="color: #53B543">+</span> Решение: 
+									.ceyses__text
+										p В результате анализа специфики деятельности компании и подбора оптимальных льготных ставок, компания сократила налоговые платежи на 20%.
+
+							.swiper-slide
+								.ceyses__item
+									span.ceyses__name <span style="color: #D17171;">-</span> Проблема: 
+									.ceyses__text
+										p ИП в начальной стадии бизнеса испытывало финансовые трудности из-за высоких налогов.
+									span.ceyses__name <span style="color: #53B543">+</span> Решение: 
+									.ceyses__text
+										p Разработка стратегии для использования региональных налоговых каникул, включая подготовку и подачу соответствующих документов. Результат: Получение налоговых каникул, снижение налоговой нагрузки на период до двух лет, что позволило клиенту сосредоточиться на развитии бизнеса.
+
+					.swiper-button-prev 
+					.swiper-button-next
+
+		section.team 
+			.container 
+				.team__wrap 
+					h2.title.team__title Наша команда
+					.swiper.team__slider 
+						.swiper-wrapper
+							.swiper-slide 	
+								.team__item
+									.team__pic 
+										img(src=require('../images/Rectangle 8.png'), alt='')
+									.team__head 
+										span.team__name Генеральный Директор 
+										span.team__job Алексей Иванов
+									.team__body
+										ul.team__list 
+											li <b>Опыт:</b> более 15 лет в сфере финансового консалтинга и налогового планирования.
+											li <b>Образование:</b> Магистр экономики, Московский государственный университет.
+							.swiper-slide
+								.team__item
+									.team__pic 
+										img(src=require('../images/Rectangle 8 (1).png'), alt='')
+									.team__head 
+										span.team__name Финансовый Аналитик
+										span.team__job Дмитрий Сергеев
+									.team__body
+										ul.team__list 
+											li <b>Опыт:</b> 12 лет в финансовом анализе и инвестиционном консалтинге.
+											li <b>Образование:</b> Магистр финансов, Лондонская школа экономики.
+							.swiper-slide
+								.team__item
+									.team__pic 
+										img(src=require('../images/Rectangle 8 (2).png'), alt='')
+									.team__head 
+										span.team__name Налоговый Консультант
+										span.team__job Мария Петрова
+									.team__body
+										ul.team__list 
+											li <b>Опыт:</b> 10 лет работы в крупных аудиторских компаниях
+											li <b>Образование:</b>  Диплом по налоговому праву, Высшая школа экономики.
+							.swiper-slide
+								.team__item
+									.team__pic 
+										img(src=require('../images/Rectangle 8 (3).png'), alt='')
+									.team__head 
+										span.team__name Юрист по Корпоративному Праву
+										span.team__job Ирина Васильева
+									.team__body
+										ul.team__list 
+											li <b>Опыт:</b> 8 лет работы в сфере корпоративного права и слияний и поглощений.
+											li <b>Образование:</b> Юридический факультет, МГУ.
+							.swiper-slide
+								.team__item
+									.team__pic 
+										img(src=require('../images/Rectangle 8 (4).png'), alt='')
+									.team__head 
+										span.team__name  IT-Специалист и Аналитик данных 
+										span.team__job Антон Кузнецов
+									.team__body
+										ul.team__list 
+											li <b>Опыт:</b> 7 лет работы в области Big Data и анализа данных.
+											li <b>Образование:</b>  Магистр информационных технологий, МФТИ.
+							.swiper-slide
+								.team__item
+									.team__pic 
+										img(src=require('../images/Rectangle 8 (5).png'), alt='')
+									.team__head 
+										span.team__name Менеджер по Клиентским Отношениям 
+										span.team__job Елена Андреева
+									.team__body
+										ul.team__list 
+											li <b>Опыт:</b> Более 10 лет в сфере управления клиентскими отношениями и бизнес-развития.
+											li <b>Образование:</b> Бакалавр маркетинга, Государственный университет управления.
+					.swiper-button-prev 
+					.swiper-button-next

@@ -1,0 +1,13 @@
+:root {
+    --color-base: #000;
+    --color-grey: #393939;
+    --color-orange: #ff8700;
+    --color-orange-2: #ED875C;
+}
+
+.color-second {
+    color: var(--color-orange);
+    font-style: normal;
+}
+
+$fontBase: "Open Sans", "sans-serif";

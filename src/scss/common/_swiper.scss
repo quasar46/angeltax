@@ -1,0 +1,33 @@
+.swiper-slide {
+    padding: 28px;
+    @media(max-width: 767px) {
+        padding: 25px;
+    }
+}
+
+.swiper-button-next:after {
+    width: 36px;
+    height: 36px;
+    background-image: url("../images/Group 25.svg");
+    background-size: cover;
+    font-size: 0;
+    margin: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 36px;
+    height: 36px;
+    @media(max-width: 767px) {
+        display: none;
+    }
+}
+
+.swiper-button-prev:after {
+    width: 36px;
+    height: 36px;
+    background-image: url("../images/Group 24.svg");
+    background-size: cover;
+    font-size: 0;
+    margin: 0;
+}

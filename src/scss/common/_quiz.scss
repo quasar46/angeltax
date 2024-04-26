@@ -1,0 +1,118 @@
+.quiz {
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px solid #d7d7d7;
+    color: #fff;
+}
+
+.next[disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.quiz__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 23px 34px;
+    background-color: var(--color-grey);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    @media (max-width: 767px) {
+        padding: 15px;
+    }
+}
+
+.quiz__item {
+    display: flex;
+    flex-direction: column;
+    &.hidden {
+        display: none;
+    }
+}
+
+.quiz__title {
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    @media(max-width: 1023px) {
+        max-width: 500px;
+    }
+    @media (max-width: 767px) {
+        font-size: 18px;
+        max-width: 422px;
+    }
+}
+
+.quiz__footer {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-left: auto;
+}
+
+.quiz__content {
+    padding: 16px 0;
+    border-top: 2px solid #5e5e5e;
+    border-bottom: 2px solid #5e5e5e;
+    padding-left: 50px;
+    margin-bottom: 10px;
+    @media (max-width: 1199px) {
+        padding-left: 0;
+    }
+}
+
+.quiz__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 300px;
+
+    label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: #d9d9d9;
+            border-radius: 50%;
+        }
+    }
+    input {
+        position: absolute;
+        z-index: -1;
+        visibility: hidden;
+        &:checked + label {
+            &::before {
+                background-color: var(--color-orange);
+                border: 3px solid #d9d9d9;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        font-size: 16px;
+        gap: 16px;
+    }
+}
+
+.quiz__item-name {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+}
+
+.quiz__count {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
